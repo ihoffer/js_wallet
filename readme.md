@@ -1,6 +1,6 @@
 # Bitcoin Wallet Prototype in JavaScript
 
-This piece of code takes an mnemonic seed as input (or you can run with the default one) and runs in an infinite loop. At every iteration it calculates the key pair from the seed, then creates and signs a transaction of 1 satoshi. In normal mode the output of the code is a single dor after every iteration. In case the current and the previous transaction doesn't match (potentially bitflip), the process prints a notification and the not matching transactions in hex format.
+This piece of code takes an mnemonic seed as input (or you can run with the default one) and runs in an infinite loop. At every iteration it calculates the key pair from the seed, then creates and signs a transaction of 1 satoshi. In normal mode the output of the code is a single dot after every iteration. In case the current and the previous transaction doesn't match (potentially bitflip), the process prints a notification and the not matching transactions in hex format.
 
 ## Requirements
 
