@@ -1,0 +1,19 @@
+{
+  "name": "projectsc",
+  "version": "1.0.0",
+  "description": "JavaScript Bitcoin Wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Istvan Hoffer",
+  "license": "ISC",
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "bitcoinjs-lib": "^3.3.2"
+  }
+}
