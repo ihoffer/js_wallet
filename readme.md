@@ -28,6 +28,10 @@ Of course you can combine the 2 flags.
 
 ## Useful tools, links
 
+My code is built on the following library: https://github.com/bitcoinjs/bitcoinjs-lib
+
 I used this website to verify the generated transactions. https://coinb.in/#verify
 
 I tested my code against the test vectors found at the bottom of this page. https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+
+Other test vectors I found (I didn't use these): https://github.com/trezor/python-mnemonic/blob/master/vectors.json
