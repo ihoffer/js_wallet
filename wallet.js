@@ -32,12 +32,12 @@ while(true) {
     const xpub = child.neutered().toBase58();
     const priv = child.toBase58();
 
-    DEV && console.log('xpub: ' + xpub); //ff0488b21e00000000000000000086eaf9dac92bff5a1391bcf396e109dc2499bfc08a550c8d17468a5f8372bceb033e53e808cb2f8c5e9c878fff3582d8257ea4ba6c4ec46cacc4793ea4ed57f06b00000100
+    DEV && console.log('xpub: ' + xpub);
     DEV && console.log('priv: ' + priv);
 
     const addr = child.getAddress();
 
-    DEV && console.log("address: " + addr); //1DsoBCjhgfMrovbKCHtbMTGVi4CFPLbvGh
+    DEV && console.log("address: " + addr);
 
     var txb = new bitcoin.TransactionBuilder();
     txb.addInput(prevHash, 0);
