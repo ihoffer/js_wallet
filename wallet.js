@@ -13,7 +13,6 @@ if (process.argv.indexOf("-m") !== -1) {
     mnemonic = "tennis strong genre chief viable can parade gift hospital breeze cry relief";
 }
 console.log("mnemonic: " + mnemonic);
-const seed = bip39.mnemonicToSeed(mnemonic);
 
 // Previous hash
 const prevHash = "3140eb24b43386f35ba69e3875eb6c93130ac66201d01c58f598defc949a5c2a";
@@ -23,6 +22,7 @@ const v = 1;
 
 var oldTx = null;
 while(true) {
+    const seed = bip39.mnemonicToSeed(mnemonic);
     var node = bitcoin.HDNode.fromSeedBuffer(seed);
 
     //Derive m/1 keypair
