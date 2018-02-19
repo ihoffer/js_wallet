@@ -35,3 +35,9 @@ I used this website to verify the generated transactions. https://coinb.in/#veri
 I tested my code against the test vectors found at the bottom of this page. https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 
 Other test vectors I found (I didn't use these): https://github.com/trezor/python-mnemonic/blob/master/vectors.json
+
+## Benchmark
+
+* Computing the root key from the mnemonic seed: 3.3707 ms
+* Deriving m/1 keypair: 46.3323 ms
+* Signing the transaction: 22.7009 ms
