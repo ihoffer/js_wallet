@@ -1,6 +1,7 @@
 'use strict';
 var bitcoin = require('bitcoinjs-lib');
 var bip39 = require('bip39');
+require('console-stamp')(console, '[HH:MM:ss.l]');
 
 const DEV = process.argv.indexOf("--debug") !== -1;
 
