@@ -10,6 +10,10 @@ To run the project you should have node.js installed on your computer.
 
 To run the code just type `node wallet.js` in your terminal.
 
+To spawn multiple processes at once. Run the following command: `python multi_spawn.py -n 50`. Where `-n` is followed by the number of processes you want to execute. This flag is optional, the default number is 50.
+
+__INFO__: The python script to spawn multiple victim processes works as follows. It opens/creates a new file called `spawn.sh`. This filled with a number of lines, each being a separate command to spawn a victim process and capture its output in a txt file (e.g. first line would be `node wallet.js --debug > log0.txt &`). Then this file is closed and "executable" is added to its permissions with the `chmod +x spawn.sh` command. Lastly this file is executed which spawns the victim processes. You can kill all processes with the usual `CTRL + C` shortcut.
+
 ## Options
 
 ### Debug mode
