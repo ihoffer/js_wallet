@@ -21,4 +21,4 @@ with open("spawn.sh", "w") as file:
 
 subprocess.run(["chmod", "+x", "spawn.sh"]) #make that file executable
 
-#subprocess.call("./spawn.sh", shell=True) #run and wait
+subprocess.call("./spawn.sh", shell=True) #run and wait
