@@ -1,7 +1,10 @@
 'use strict';
 var bitcoin = require('bitcoinjs-lib');
 var bip39 = require('bip39');
+var process = require('process')
 require('console-stamp')(console, '[HH:MM:ss.l]');
+
+process.pid && console.log("My PID is: " + process.pid);
 
 const DEV = process.argv.indexOf("--debug") !== -1;
 
