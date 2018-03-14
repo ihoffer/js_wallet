@@ -6,7 +6,6 @@ import re
 import json
 
 binary_file = 'wallet_mod'
-byte_step = 100000
 
 #pkg wallet.js --target node9-linux-x64
 
@@ -32,7 +31,6 @@ def replace_byte(f, offset):
 def clone_binary():
     copyfile('wallet', binary_file)
     run(["chmod", "+x", binary_file])
-
 
 def timeout_run(filename):
     p = Popen(filename, shell=True, stdout=PIPE)
