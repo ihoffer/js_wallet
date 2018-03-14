@@ -43,15 +43,12 @@ def timeout_run(filename):
 def check_output(output):
     fine = re.compile('.*\[LOG\]\..*')
     something_happened = re.compile('.*Something happened.*')
-    we_have_log = re.compile('.*LOG.*')
     if something_happened.match(output):
         return('Something happened', output)
     elif fine.match(output):
         return('Everything\'s fine')
-    elif we_have_log.match(output):
-        return('We have log', output)
     else:
-        return('Unknown error breaking code')
+        return('Error breaking code')
 
 def run_and_check():
     output = timeout_run('./{}'.format(binary_file)).decode('ascii').replace(' ', '').replace('\n', '')
